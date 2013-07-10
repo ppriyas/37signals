@@ -1,0 +1,6 @@
+
+1) Do everything upto the gray asterisks ??
+
+2) header menu, footer, and all other content in definition lists dt's and dd's
+
+3) 
