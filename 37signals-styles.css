@@ -36,10 +36,10 @@ body {
 }
 
 .main {
-	width: 90%;
-	max-width: 800px;
+	width: 800px;	
 	margin:  0 auto 0 auto;
 	text-align: center;
+	padding: 15px 0 0 0;
 }
 
 
@@ -79,8 +79,10 @@ img {
 #nav-main ul{
 	margin: -15px 25px;
 	list-style: none;
-    float: right; 
-    white-space:nowrap;
+	position: relative;
+	left: 700px;
+    /*float: right; */
+    /*white-space:nowrap;*/
 }
 
 #nav-main li{	
@@ -92,7 +94,7 @@ img {
 	font-size: 11px;
 	font-family: 'Lucida Grande', Verdana, sans-serif;
 	text-decoration: none;
-	color: #222;
+	color: #369;
 }
 
 .main-tasks  a{	
@@ -101,11 +103,19 @@ img {
 
 .tasks {
 	display: inline-block;
-	padding: 50px 0 0 0;	
-	width: 230px;
-	
+	padding: 20px 0 10px 0;	
+	width: 180px;
+	border-radius: 5px;
 	margin: 0 30px 0 0;
-	background-color: rgba(0,0,0,.055);	
+	/*background-color: rgba(0,0,0,.055);	*/
+	border: 1px solid #e8e8e8;
+	background: -moz-linear-gradient(top,  rgba(235,235,235,0) 0%, rgba(235,235,235,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(235,235,235,0)), color-stop(100%,rgba(235,235,235,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(235,235,235,0) 0%,rgba(235,235,235,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(235,235,235,0) 0%,rgba(235,235,235,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(235,235,235,0) 0%,rgba(235,235,235,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(235,235,235,0) 0%,rgba(235,235,235,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ebebeb', endColorstr='#ebebeb',GradientType=0 ); /* IE6-9 */
 }
 
 .main-tasks ul {
@@ -115,11 +125,11 @@ img {
 
 .main-tasks li {
 	font-family: sans-serif;	
-	padding: 0 0 8px 0;
+	padding: 0 0 12px 0;
 	height: 40%;	
 }
 
-#symb{
+.symb{
 	text-decoration: none;	
 	font-size: 8px;
 }
@@ -145,7 +155,7 @@ img {
 }
 
 .task-desc {
-	width: 60%;
+	width: 80%;
 	color: #222;	
 	font-size: 14px;
 }
